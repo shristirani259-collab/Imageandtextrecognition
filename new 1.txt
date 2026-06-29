@@ -1,0 +1,81 @@
+## Project Title Text Recognition using Optical Character Recognition (OCR)
+
+# Object 
+the ojectiveThe objective of this project is to extract text from an image using Python and Tesseract OCR.
+ The system reads an image, processes it, and converts the text present in the image into editable digital text.
+ 
+# Technologies Used
+Python 3.x
+OpenCV (opencv-python)
+Tesseract OCR (pytesseract)
+# Project Structure
+AI_Project/
+│
+├── main.py
+├── sample_text.jpg
+├── output.txt
+├── requirements.txt
+└── README.md
+
+# Installation
+1. Clone or Download the Project
+git clone <repository-url>
+cd AI_Project
+2. Install Required Libraries
+pip install -r requirements.txt
+3. Install Tesseract OCR
+Windows
+Download and install Tesseract OCR from: https://github.com/tesseract-ocr/tesseract
+After installation, if needed, add the following path in main.py:
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+Linux
+sudo apt install tesseract-ocr
+macOS
+brew install tesseract
+
+# How It Works
+Read the input image.
+Convert the image to grayscale.
+Apply thresholding to improve text visibility.
+Use Tesseract OCR to extract text.
+Display and save the extracted text to output.txt.
+
+# Running the Project
+Place an image containing text in the project folder and rename it to:
+sample_text.jpg
+Run the program:
+python main.py
+
+# Example Input
+Image containing:
+Hello World
+Artificial Intelligence Project
+
+# Example Output
+===== Recognized Text =====
+Hello World
+Artificial Intelligence Project
+The extracted text will also be saved in:
+output.txt
+
+# Applications of OCR
+Document digitization
+Automatic form processing
+Number plate recognition
+Passport and ID scanning
+Invoice and receipt processing
+Text extraction from printed documents
+Future Enhancements
+Real-time OCR using a webcam
+Handwritten text recognition
+Support for multiple languages
+Text-to-speech conversion
+GUI-based application
+
+# Conclusion
+This project demonstrates the implementation of Optical Character Recognition (OCR) using Python, OpenCV, and Tesseract. It provides a simple and efficient way to convert text from images into machine-readable and editable text.
+
+# Author
+Name: Shristi Rani
+
+Project: AI Project 4 - OCR Text Recognition
